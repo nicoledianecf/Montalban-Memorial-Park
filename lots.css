@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)), url(MMP\ bg.jpg);
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  font-family: "Poppins", 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5)), url(MMP\ bg.jpg);
+  background-size: cover;
+  background-position: center; 
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 15px;
+}
+
+nav {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  z-index: 10000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 0.5em;
+}
+
+.logo span {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: lawngreen;
+}
+
+.lots {
+  text-align: center;
+  align-content: center;
+  font-size: 1.3em;
+  padding: 2px;
+}
+
+/*slideshow*/
+.slide-container {
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  width: 70%;
+}   
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}  
+
+/*prev next buttons*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.mySlides p {
+  margin: 0;
+  padding: 20px;
+  font-size: 1.1em;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.family {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: white;
+  position: relative;
+}
+
+.family img {
+  height: 300px;
+  max-width: 50%;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.family p {
+  max-width: 70%;
+  font-size: 1em;
+}
+
+.columbary {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: white;
+}
+
+.columbary img {
+  height: 300px;
+  max-width: 50%;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.columbary p {
+  max-width: 70%;
+  font-size: 1em;
+}
+
+.lawn {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: white;
+}
+
+.lawn img {
+  height: 300px;
+  max-width: 50%;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.lawn p {
+  max-width: 70%;
+  font-size: 1em;
+}
+
+.apartment {
+  display: flex;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color: white;
+}
+
+.apartment img {
+  height: 300px;
+  max-width: 50%;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.apartment p {
+  max-width: 70%;
+  font-size: 1em;
+}
+
+strong {
+  color: lawngreen;
+  font-size: 1.2em;
+}
+
+/**contact section**/
+#contact {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  font-size: 1em;
+  display: flex;
+  width: 100%;
+}
+
+#contact img {
+  display: block;
+  margin: 15px;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+#contact ul {
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 10px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: 10px;
+}
+
+.contact-item {
+  display: flex;
+  max-width: 800px;
+  text-align: left;
+  padding: 5px;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+
+span a {
+  text-decoration: none;
+  color: white;
+}
+
+span a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", 'Segoe UI', sans-serif;
+  font-size: 0.8em;
+  position: fixed;
+  padding: 10px 0;
+  width: 100%;
+  bottom: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
